@@ -31,14 +31,12 @@
             color: #0056b3;
         }
 
-        img.profile-pic {
-            border-radius: 50%;
-            width: 180px;
+        .info {
+            float: right;
             padding: 6px;
-            margin-top: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            padding-top: 35px;
+            color: #fff;
+
         }
 
         h1 {
@@ -50,15 +48,27 @@
         @media (max-width: 600px) {
             img {
                 display: none;
-            }}
+            }
+            .info {
+                display: none;
+            }
+            .social-links{
+                display: none;
+            }
+        }
+        @media (width > 600px) {
+            .social-links-mobile{
+                display: none;
+            }
+        }
     </style>
 </head>
 </head>
 
 
 <body>
-<div style="padding-bottom: 20px; background-color: #333" >
-<span style="float:right;padding:6px; padding-top:35px; color:white">
+<div style="padding-bottom: 20px; background-color: #333">
+<span class="info">
         wawrzinek.dominik@gmail.com <br>Düsseldorf, Deutschland
         <div class="social-links">
             <!-- Add more social links as needed -->
@@ -69,8 +79,17 @@
                style="float:right;padding:0px; padding-right: 33px; color:white">Email</a>
         </div>
     </span>
-    <img style="float:left;border-radius:50%;width:180px;padding:6px; padding-top: 20px" src="https://raw.githubusercontent.com/dm321/CV/main/dw-photo.png" />
+    <img style="float:left;border-radius:50%;width:180px;padding:6px; padding-top: 20px"
+         src="https://raw.githubusercontent.com/dm321/CV/main/dw-photo.png"/>
     <h1 style="padding-bottom: 8%">Dominik Wawrzinek<br> (Senior Software Developer)</h1>
+    <div class="social-links-mobile">
+        <!-- Add more social links as needed -->
+        <a href="https://linkedin.com/in/dominik-wawrzinek-223762241" target="_blank"
+           style="float:left;padding:0px;color:white">LinkedIn</a>
+        <a href="https://github.com/dm321" target="_blank" style="float:right;padding:0px;color:white">GitHub</a>
+        <a href="mailto:wawrzinek.dominik@gmail.com" target="_blank"
+           style="float:right;padding:0px; padding-right: 33px; color:white">Email</a>
+    </div>
 </div>
 
 
@@ -99,7 +118,10 @@
         <li>
             <div style="padding-left: 5px"><h4>Investify (Jan 2024 - jetzt)</h4>
                 <div style="padding-left: 15px">
-                    <p>Implementierung eines Identifikationsmoduls, welches mit Spring Boot 3 realisiert wird. Dieses Modul dient zur Identifikation des Kunden mittels PostIdent-Methode. Diese Anwendung muss ein einfaches Prozessmanagement implementieren, einschließlich SFTP-Konnektivität zum Herunterladen des Videoprotokolls des Identifikationsvorgangs.</p>
+                    <p>Implementierung eines Identifikationsmoduls, welches mit Spring Boot 3 realisiert wird. Dieses
+                        Modul dient zur Identifikation des Kunden mittels PostIdent-Methode. Diese Anwendung muss ein
+                        einfaches Prozessmanagement implementieren, einschließlich SFTP-Konnektivität zum Herunterladen
+                        des Videoprotokolls des Identifikationsvorgangs.</p>
                     <ul>
                         <li>Spring Boot 3</li>
                         <li>Kubernetes</li>
